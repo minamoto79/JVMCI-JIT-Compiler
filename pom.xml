@@ -26,8 +26,10 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <compilerArgs>
-            <arg>--add-exports=jdk.internal.vm.ci/jdk.vm.ci.code=jdk.internal.vm.compiler</arg>
-            <arg>--add-exports=jdk.internal.vm.ci/jdk.vm.ci.hotspot=jdk.internal.vm.compiler</arg>
+                  <arg>--add-exports=jdk.internal.vm.ci/jdk.vm.ci.code=jdk.internal.vm.compiler</arg>
+                  <arg>--add-exports=jdk.internal.vm.ci/jdk.vm.ci.hotspot=jdk.internal.vm.compiler</arg>
+                  <arg>--add-exports=jdk.internal.vm.ci/jdk.vm.ci.runtime=jdk.internal.vm.compiler</arg>
+                  <arg>--add-exports=jdk.internal.vm.ci/jdk.vm.ci.services=jdk.internal.vm.compiler</arg>
           </compilerArgs>
           <fork>true</fork>
         </configuration>
